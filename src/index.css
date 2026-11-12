@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: 'Outfit', sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --color-cosmic-black: #050611;
+  --color-cosmic-navy: #090D25;
+  --color-cosmic-purple: #5425A8;
+  --color-cosmic-magenta: #FF008C;
+  --color-cosmic-cyan: #00F5D4;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #050611;
+  color: #F8FAFC;
+}
+
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Subtle cosmic grid & orbit aesthetics */
+.bg-cosmic-grid {
+  background-image: radial-gradient(rgba(84, 37, 168, 0.15) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.cosmic-glass {
+  background: rgba(9, 13, 37, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.cosmic-glass-hover:hover {
+  background: rgba(15, 22, 58, 0.85);
+  border-color: rgba(0, 245, 212, 0.3);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050611;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2246;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5425A8;
+}

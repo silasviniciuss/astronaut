@@ -1,0 +1,6 @@
+{
+  "name": "Astronaut Comunicação",
+  "description": "Sua marca em outro nível. Agência de marketing digital, audiovisual, fotografia, gestão de redes e produção de eventos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
